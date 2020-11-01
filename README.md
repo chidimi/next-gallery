@@ -2,7 +2,7 @@
 https://next-gallery.vercel.app/
 
 ## イントロダクション
-Next.js + firebaseで作ったファイルアップローダーです
+Next.js + firebaseで作ったイメージファイルアップローダーです
 
 https://zenn.dev/dala/books/nextjs-firebase-service
 こちらの記事を読んで大変に面白かったので作りました。
