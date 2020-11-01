@@ -1,6 +1,13 @@
 ## サンプルURL
 https://next-gallery.vercel.app/
 
+## イントロダクション
+Next.js + firebaseで作ったファイルアップローダーです
+
+https://zenn.dev/dala/books/nextjs-firebase-service
+こちらの記事を読んで大変に面白かったので作りました。
+
+
 ## 機能
 - アップロード機能
 - storageからファイルを読み込む機能
@@ -11,6 +18,7 @@ https://next-gallery.vercel.app/
 - アップロード完了時、再レンダリングをしてその時アップロードしたファイルをすぐに表示させる
 - 画像が表示されるまでのレスポンスが悪いため、改善する
 - 画像と画像の隙間を埋める
+- validation機能
 - テストを書く
 
 ## 学んだこと
