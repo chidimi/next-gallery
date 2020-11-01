@@ -1,21 +1,34 @@
 ## サンプルURL
 https://next-gallery.vercel.app/
 
-## やりたかったこと
+## 機能
+- アップロード機能
+- storageからファイルを読み込む機能
+
+## やれてないこと
 - アップロード者のファイルのみを表示させる機能
 - アップロード者のファイルを削除する機能
 - アップロード完了時、再レンダリングをしてその時アップロードしたファイルをすぐに表示させる
-- 画像が表示されるまで謎の間が存在するため、削除する
+- 画像が表示されるまでのレスポンスが悪いため、改善する
 - 画像と画像の隙間を埋める
+- テストを書く
 
 ## 学んだこと
-- 
 - React Hooksの基本的使い方 useEffect, useState
-- Next.jsの
+- Next.jsの基本的使い方。SSRとSPA
+- Node.jsにはXMLHttpRequestがないので、サーバーからfirebase storage apiを使えません！ なので、クライアントから使わないといけないようです　あんまりSSRしてる意味がないとはいえ、意識しないとエラーになってしまいます。
 
 ## 反省点
 - アップロード処理を[この記事](https://qiita.com/tetsurotayama/items/5129f0cfb21f9ec9b9a0)からコピペしました。悲しい…
+- TypeScriptなのに型を全然書いていない。
 
+## 次にやりたいこと
+書籍管理システムをNext.js + express.js(rest api server)あるいは、Next.js + Hasuraで作ってみようと思います
+
+## 読んだ方に伝えたいこと
+はじめて作って、ネットワーク上に公開したアプリケーションです。より改善を加えていきたいです。
+
+## 以下、デフォルトREADME
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
