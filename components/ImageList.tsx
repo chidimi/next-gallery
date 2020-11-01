@@ -3,7 +3,8 @@ type Props = {
     urls: string[];
 }
 
-export default function ImageList(urls: []) {
+export default function ImageList(props) {
+    const urls = props.urls
     return (
         <div>
             {urls.map((url) => (
