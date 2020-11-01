@@ -26,7 +26,7 @@ https://next-gallery.vercel.app/
 書籍管理システムをNext.js + express.js(rest api server)あるいは、Next.js + Hasuraで作ってみようと思います
 
 ## 読んだ方に伝えたいこと
-はじめて作って、ネットワーク上に公開したアプリケーションです。より改善を加えていきたいです。
+はじめて作って、インターネット上に公開したアプリケーションです。より改善を加えていきたいです。
 
 ## 以下、デフォルトREADME
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
