@@ -1,3 +1,21 @@
+## サンプルURL
+https://next-gallery.vercel.app/
+
+## やりたかったこと
+- アップロード者のファイルのみを表示させる機能
+- アップロード者のファイルを削除する機能
+- アップロード完了時、再レンダリングをしてその時アップロードしたファイルをすぐに表示させる
+- 画像が表示されるまで謎の間が存在するため、削除する
+- 画像と画像の隙間を埋める
+
+## 学んだこと
+- 
+- React Hooksの基本的使い方 useEffect, useState
+- Next.jsの
+
+## 反省点
+- アップロード処理を[この記事](https://qiita.com/tetsurotayama/items/5129f0cfb21f9ec9b9a0)からコピペしました。悲しい…
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
