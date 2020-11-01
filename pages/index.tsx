@@ -93,13 +93,14 @@ const Gallery = () => {
     result.items.forEach((item) => {
       item.getDownloadURL().then((url) => {
         urls.push(url)
+        console.log("a")
+        setUrlState(urls)
       })
     }
     )
-    setUrlState(urls)
   }).catch((error) => {
     console.log('error')
-  }), [urlState]})
+  })}, [])
 
   return (
       <>
