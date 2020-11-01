@@ -5,6 +5,7 @@ import { useDropzone } from 'react-dropzone';
 import DenseAppBar from '../components/Appbar';
 import ImageList from '../components/ImageList';
 import Button from '@material-ui/core/Button/Button';
+import firebase from 'firebase';
 
 type MyFile = File & {
   preview: string;
@@ -30,8 +31,6 @@ const Gallery = () => {
       console.log('onUpload start');
   
       // ローディングをOn。progressを初期化
-      setUploading(true);
-      setProgress(0);
   
       function uploadImageAsPromise(file) {
         console.log('uploadImageAsPromise start');
@@ -65,8 +64,6 @@ const Gallery = () => {
         }).then(function (downloadURL) {
           console.log("Finished uploading file: " + file_name);
   
-          // progressを更新する
-          setProgress(oldProgress => (oldProgress + 1));
           return downloadURL;
         }).catch(function () {
           console.log("Error:uploadImageAsPromise");
@@ -80,8 +77,6 @@ const Gallery = () => {
       console.log(result);
   
       // ローディングを終了し、リストを空に
-      setUploading(false);
-      setProgress(0);
       setFiles([]);
   
       alert("送信されました");
