@@ -1,14 +1,8 @@
-import { AppBar } from '@material-ui/core';
 import Container from '@material-ui/core/Container/Container';
 import React, { useEffect, useState } from 'react';
 import { useCallback } from 'react';
 import { useDropzone } from 'react-dropzone';
 import DenseAppBar from '../components/Appbar';
-import ButtonAppBar from '../components/Appbar';
-import Navbar from '../components/Navbar';
-import NavTabs from '../components/Tab';
-import CenteredTabs from '../components/Tab';
-import * as firebase from 'firebase/app'
 import ImageList from '../components/ImageList';
 import Button from '@material-ui/core/Button/Button';
 
@@ -19,8 +13,6 @@ type MyFile = File & {
 const Gallery = () => {
 
   const [files, setFiles] = useState<MyFile[]>([]);
-  const [uploading, setUploading] = useState(false);
-  const [progress, setProgress] = useState(0);
   const [urlState, setUrlState] = useState([])
 
   const onDrop = useCallback((acceptedFiles: File[]) => {
